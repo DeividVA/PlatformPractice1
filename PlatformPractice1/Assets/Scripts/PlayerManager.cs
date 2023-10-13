@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    //[SerializeField] private GameObject bulletPrefab;
-    //[SerializeField] private Vector2 bulletForce;
-    //[SerializeField] private float bulletOffset;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Vector2 bulletForce;
+    [SerializeField] private float bulletOffset;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpPrecision;
@@ -31,10 +31,10 @@ public class PlayerManager : MonoBehaviour
             if (Mathf.Abs(_rigidbody.velocity.y) <= jumpPrecision) _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
-        /*if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2"))
         {
             Shoot();
-        }*/
+        }
 
         // If no horizontal movement stop running animation
         if (Input.GetAxis("Horizontal") == .0f)
@@ -53,10 +53,10 @@ public class PlayerManager : MonoBehaviour
         _spriteRenderer.flipX = Input.GetAxis("Horizontal") < .0f;
     }
 
-    //void Shoot()
-    /*{
+    void Shoot()
+    {
         GameObject newBullet = Instantiate(bulletPrefab, transform.position + Vector3.up * bulletOffset, Quaternion.identity);
         Vector2 directedBulletForce = new Vector2(bulletForce.x * (_spriteRenderer.flipX ? -1 : 1), bulletForce.y);
         newBullet.GetComponent<Rigidbody2D>().AddForce(directedBulletForce, ForceMode2D.Impulse);
-    }*/
+    }
 }
