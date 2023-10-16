@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpPrecision;
+    //[SerializeField] private float jumpVelocity;
 
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
@@ -29,6 +30,7 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             if (Mathf.Abs(_rigidbody.velocity.y) <= jumpPrecision) _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            _animator.SetFloat("jumpVelocity",_rigidbody.velocity.y);
         }
 
         if (Input.GetButtonDown("Fire2"))
@@ -51,6 +53,8 @@ public class PlayerManager : MonoBehaviour
         transform.position = actualPosition;
         // set sprite direction
         _spriteRenderer.flipX = Input.GetAxis("Horizontal") < .0f;
+
+        CheckForGround();
     }
 
     void Shoot()
@@ -59,4 +63,19 @@ public class PlayerManager : MonoBehaviour
         Vector2 directedBulletForce = new Vector2(bulletForce.x * (_spriteRenderer.flipX ? -1 : 1), bulletForce.y);
         newBullet.GetComponent<Rigidbody2D>().AddForce(directedBulletForce, ForceMode2D.Impulse);
     }
+
+    void CheckForGround() 
+    {
+        if (GetComponent<PolygonCollider2D>().IsTouchingLayers(LayerMask.GetMask("Default"))) 
+        {
+            _animator.SetBool("isGrounded", true);
+        }
+        else 
+        {
+            _animator.SetBool("isGrounded", false);
+
+        }
+    }
+
+
 }
