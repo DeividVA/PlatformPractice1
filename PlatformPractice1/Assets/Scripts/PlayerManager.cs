@@ -27,22 +27,20 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         // Jump only if vertical velocity absolute value is less than jumpPrecision 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButton("Jump"))
         {
             if (Mathf.Abs(_rigidbody.velocity.y) <= jumpPrecision) _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             /*_animator.SetFloat("jumpVelocity",_rigidbody.velocity.y*/
             if (Mathf.Abs(_rigidbody.velocity.y) > 0.1f) _animator.SetBool("isGoingup", true);
             if (Mathf.Abs(_rigidbody.velocity.y) > 0.1f) _animator.SetBool("isGoingdown", false);
              
-
-
         }
 
         if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f) _animator.SetBool("isGoingup", false);
         if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f) _animator.SetBool("isGoingdown", true);
 
-        if (Mathf.Abs(_rigidbody.velocity.y) == 0.1f) _animator.SetBool("isGoingup", false);
-        if (Mathf.Abs(_rigidbody.velocity.y) == 0.1f) _animator.SetBool("isGoingdown", false);
+        //if (Mathf.Abs(_rigidbody.velocity.y) == .0f) _animator.SetBool("isGoingup", false);
+        //if (Mathf.Abs(_rigidbody.velocity.y) == .0f) _animator.SetBool("isGoingdown", false);
 
         if (Input.GetButtonDown("Fire2"))
         {
@@ -52,6 +50,8 @@ public class PlayerManager : MonoBehaviour
         // If no horizontal movement stop running animation
         if (Input.GetAxis("Horizontal") == .0f)
         {
+            _animator.SetBool("isGoingup", false);
+            _animator.SetBool("isGoingdown", false);
             _animator.SetBool("isRunning", false);
             return;
         }
