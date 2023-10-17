@@ -30,7 +30,11 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             if (Mathf.Abs(_rigidbody.velocity.y) <= jumpPrecision) _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            _animator.SetFloat("jumpVelocity",_rigidbody.velocity.y);
+            if (Mathf.Abs(_rigidbody.velocity.y) > 0.1f) _animator.SetBool("isGoingup", true);
+                
+                
+                
+            /*_animator.SetFloat("jumpVelocity",_rigidbody.velocity.y);*/
         }
 
         if (Input.GetButtonDown("Fire2"))
@@ -54,7 +58,7 @@ public class PlayerManager : MonoBehaviour
         // set sprite direction
         _spriteRenderer.flipX = Input.GetAxis("Horizontal") < .0f;
 
-        CheckForGround();
+        /*CheckForGround();*/
     }
 
     void Shoot()
@@ -64,7 +68,7 @@ public class PlayerManager : MonoBehaviour
         newBullet.GetComponent<Rigidbody2D>().AddForce(directedBulletForce, ForceMode2D.Impulse);
     }
 
-    void CheckForGround() 
+    /*void CheckForGround() 
     {
         if (GetComponent<PolygonCollider2D>().IsTouchingLayers(LayerMask.GetMask("Default"))) 
         {
@@ -75,7 +79,7 @@ public class PlayerManager : MonoBehaviour
             _animator.SetBool("isGrounded", false);
 
         }
-    }
+    }*/
 
 
 }
