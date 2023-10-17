@@ -30,12 +30,19 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             if (Mathf.Abs(_rigidbody.velocity.y) <= jumpPrecision) _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            /*_animator.SetFloat("jumpVelocity",_rigidbody.velocity.y*/
             if (Mathf.Abs(_rigidbody.velocity.y) > 0.1f) _animator.SetBool("isGoingup", true);
-                
-                
-                
-            /*_animator.SetFloat("jumpVelocity",_rigidbody.velocity.y);*/
+            if (Mathf.Abs(_rigidbody.velocity.y) > 0.1f) _animator.SetBool("isGoingdown", false);
+             
+
+
         }
+
+        if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f) _animator.SetBool("isGoingup", false);
+        if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f) _animator.SetBool("isGoingdown", true);
+
+        if (Mathf.Abs(_rigidbody.velocity.y) == 0.1f) _animator.SetBool("isGoingup", false);
+        if (Mathf.Abs(_rigidbody.velocity.y) == 0.1f) _animator.SetBool("isGoingdown", false);
 
         if (Input.GetButtonDown("Fire2"))
         {
