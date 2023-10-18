@@ -1,3 +1,5 @@
+using System.Collections;
+using TMPro;
 using UnityEditor.Search;
 using UnityEngine;
 
@@ -9,11 +11,13 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpPrecision;
-    //[SerializeField] private float jumpVelocity;
+    [SerializeField] private float coinCount;
 
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
     private Rigidbody2D _rigidbody;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,26 +25,20 @@ public class PlayerManager : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        StartCoroutine(CoinCounting());
     }
 
     // Update is called once per frame
     void Update()
     {
+        _animator.SetBool("isGoingup", _rigidbody.velocity.y > 0.1f);
+        _animator.SetBool("isGoingdown", _rigidbody.velocity.y < -0.1f);
+
         // Jump only if vertical velocity absolute value is less than jumpPrecision 
         if (Input.GetButton("Jump"))
         {
-            if (Mathf.Abs(_rigidbody.velocity.y) <= jumpPrecision) _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            /*_animator.SetFloat("jumpVelocity",_rigidbody.velocity.y*/
-            if (Mathf.Abs(_rigidbody.velocity.y) > 0.1f) _animator.SetBool("isGoingup", true);
-            if (Mathf.Abs(_rigidbody.velocity.y) > 0.1f) _animator.SetBool("isGoingdown", false);
-             
+            if (Mathf.Abs(_rigidbody.velocity.y) <= jumpPrecision) _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);             
         }
-
-        if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f) _animator.SetBool("isGoingup", false);
-        if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f) _animator.SetBool("isGoingdown", true);
-
-        //if (Mathf.Abs(_rigidbody.velocity.y) == .0f) _animator.SetBool("isGoingup", false);
-        //if (Mathf.Abs(_rigidbody.velocity.y) == .0f) _animator.SetBool("isGoingdown", false);
 
         if (Input.GetButtonDown("Fire2"))
         {
@@ -50,11 +48,9 @@ public class PlayerManager : MonoBehaviour
         // If no horizontal movement stop running animation
         if (Input.GetAxis("Horizontal") == .0f)
         {
-            _animator.SetBool("isGoingup", false);
-            _animator.SetBool("isGoingdown", false);
             _animator.SetBool("isRunning", false);
             return;
-        }
+        } /*return equivale a un else*/
 
         // Activate running animation
         _animator.SetBool("isRunning", true);
@@ -65,7 +61,6 @@ public class PlayerManager : MonoBehaviour
         // set sprite direction
         _spriteRenderer.flipX = Input.GetAxis("Horizontal") < .0f;
 
-        /*CheckForGround();*/
     }
 
     void Shoot()
@@ -75,18 +70,11 @@ public class PlayerManager : MonoBehaviour
         newBullet.GetComponent<Rigidbody2D>().AddForce(directedBulletForce, ForceMode2D.Impulse);
     }
 
-    /*void CheckForGround() 
+    IEnumerator  CoinCounting()
     {
-        if (GetComponent<PolygonCollider2D>().IsTouchingLayers(LayerMask.GetMask("Default"))) 
-        {
-            _animator.SetBool("isGrounded", true);
-        }
-        else 
-        {
-            _animator.SetBool("isGrounded", false);
 
-        }
-    }*/
+    }
 
 
+    
 }
