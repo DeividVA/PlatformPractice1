@@ -11,13 +11,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpPrecision;
-    [SerializeField] private float coinCount;
 
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
     private Rigidbody2D _rigidbody;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +22,7 @@ public class PlayerManager : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        StartCoroutine(CoinCounting());
+
     }
 
     // Update is called once per frame
@@ -70,11 +67,5 @@ public class PlayerManager : MonoBehaviour
         newBullet.GetComponent<Rigidbody2D>().AddForce(directedBulletForce, ForceMode2D.Impulse);
     }
 
-    IEnumerator  CoinCounting()
-    {
 
-    }
-
-
-    
 }

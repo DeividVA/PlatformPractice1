@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5694011433891288159}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 517ed131d5b160a43a3b7681877fad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shatterEffect: {fileID: 0}
+  Quantity: 1
+  Hud: {fileID: 0}
 --- !u!95 &2897958405942210533
 Animator:
   serializedVersion: 5

@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Coin : MonoBehaviour
 {
-
-    [SerializeField] private GameObject shatterEffect;
-    private TextMeshPro _text;
+    [SerializeField] private int Quantity;
+    [SerializeField] private Points Hud;
 
     // Start is called before the first frame update
     void Start()
     {
-        _text = GetComponent<TextMeshPro>();
 
         
     }
@@ -27,12 +26,11 @@ public class Coin : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-
+            Hud.AddPoints(Quantity);
             Destroy(this.gameObject);
-            //habría que sumar a la cuenta de monedas text++
         }
     }
-
+    //TODO: Have the prefab accepting Hud text. Otherwise you have to add it to every object
 }
 
 
