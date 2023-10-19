@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4cc645fbe52e13043be6255204e456ff
+guid: 8415bd8163b1b804194b9b6a1a26241f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharacterSheet - copia_0
+      name: CharacterSheet - copia 2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88beaf4de54ef42449c96386308b202f
-      internalID: 1032616609
+      spriteID: bc57d42d1158cda4887e317247580935
+      internalID: -1821445886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_1
+      name: CharacterSheet - copia 2_1
       rect:
         serializedVersion: 2
         x: 0
@@ -152,20 +152,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a404c6f92dd044596a57e21688c358
-      internalID: -1821372568
+      spriteID: 5d9c477dc094f3f4fa7b1c85fd27c742
+      internalID: 916520769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_2
+      name: CharacterSheet - copia 2_2
       rect:
         serializedVersion: 2
         x: 16
@@ -173,20 +173,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4097adb16c01d99489caba676a44005e
-      internalID: 285938444
+      spriteID: 416f184e28336054eafab54c9848a80e
+      internalID: 1841795689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_3
+      name: CharacterSheet - copia 2_3
       rect:
         serializedVersion: 2
         x: 32
@@ -194,20 +194,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f62fa8db17165846a240fbb89908066
-      internalID: -2008991568
+      spriteID: 9ee66dfbaa94aad44adf90ac611015dd
+      internalID: 1746006141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_4
+      name: CharacterSheet - copia 2_4
       rect:
         serializedVersion: 2
         x: 48
@@ -215,20 +215,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e95415927677c2149a7bd2715e5f36e0
-      internalID: -1912682991
+      spriteID: de9b14f8eee18c04dadeaea6af8a9310
+      internalID: -825846044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_5
+      name: CharacterSheet - copia 2_5
       rect:
         serializedVersion: 2
         x: 0
@@ -236,20 +236,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c9512881a5f3e94d9e3c2d161fac16b
-      internalID: 914564298
+      spriteID: 19ade3be027c9bf45b096fd588690968
+      internalID: 168793204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_6
+      name: CharacterSheet - copia 2_6
       rect:
         serializedVersion: 2
         x: 16
@@ -257,20 +257,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2aae28c4428ec84185ef741d87abfe9
-      internalID: 1933936575
+      spriteID: f752bfd576093634090e3982b3a642d8
+      internalID: -1368688833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_7
+      name: CharacterSheet - copia 2_7
       rect:
         serializedVersion: 2
         x: 32
@@ -278,20 +278,41 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bda7fdd09a936ae408505d8b8d49de44
-      internalID: 985458430
+      spriteID: 74f3acf4a726ad84cada6652e4459efe
+      internalID: -266146045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_8
+      name: CharacterSheet - copia 2_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a6cb51f1616f049965ceeb8b5358e1
+      internalID: -22195860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterSheet - copia 2_9
       rect:
         serializedVersion: 2
         x: 0
@@ -299,20 +320,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 219cdae2d5ac3a74ba3dc305cdebb104
-      internalID: 1226343484
+      spriteID: 6ec778d682b219749aed5d27880c136d
+      internalID: -87683277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_9
+      name: CharacterSheet - copia 2_10
       rect:
         serializedVersion: 2
         x: 0
@@ -320,20 +341,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36905eab4c02e4646b666344c6f90760
-      internalID: -1081736207
+      spriteID: cd22d3776109989478a50ffb3a4cb198
+      internalID: -1209714734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_10
+      name: CharacterSheet - copia 2_11
       rect:
         serializedVersion: 2
         x: 16
@@ -341,20 +362,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcb81cf3ddf8e4b4ea2735b86214166d
-      internalID: 1711165860
+      spriteID: 95ee777881d22c34b8a2bc0c5fae749a
+      internalID: -249771713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_11
+      name: CharacterSheet - copia 2_12
       rect:
         serializedVersion: 2
         x: 32
@@ -362,20 +383,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1395cc276af4b0141a5b305babae54f0
-      internalID: -589931236
+      spriteID: 5cef73b3f1f5b4b4499819da4e7010f1
+      internalID: -516497010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_12
+      name: CharacterSheet - copia 2_13
       rect:
         serializedVersion: 2
         x: 48
@@ -383,20 +404,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec152807d9f99364f844438496c058ef
-      internalID: 2027555337
+      spriteID: 62847149632535f4783967b9fc1d199c
+      internalID: -1029972932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_13
+      name: CharacterSheet - copia 2_14
       rect:
         serializedVersion: 2
         x: 0
@@ -404,20 +425,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a080c26d1a9580a48815fa4d07abca86
-      internalID: 1525891187
+      spriteID: 36c86cf835156ce4c9609928defecd65
+      internalID: -1884523115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet - copia_14
+      name: CharacterSheet - copia 2_15
       rect:
         serializedVersion: 2
         x: 16
@@ -425,14 +446,14 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cb105d6ce4acf74fa34b0f535e65be3
-      internalID: 823598321
+      spriteID: 1156156b366928b42be1a3a0a77b0c18
+      internalID: -1047951362
       vertices: []
       indices: 
       edges: []
@@ -448,21 +469,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CharacterSheet - copia_0: 1032616609
-      CharacterSheet - copia_1: -1821372568
-      CharacterSheet - copia_10: 1711165860
-      CharacterSheet - copia_11: -589931236
-      CharacterSheet - copia_12: 2027555337
-      CharacterSheet - copia_13: 1525891187
-      CharacterSheet - copia_14: 823598321
-      CharacterSheet - copia_2: 285938444
-      CharacterSheet - copia_3: -2008991568
-      CharacterSheet - copia_4: -1912682991
-      CharacterSheet - copia_5: 914564298
-      CharacterSheet - copia_6: 1933936575
-      CharacterSheet - copia_7: 985458430
-      CharacterSheet - copia_8: 1226343484
-      CharacterSheet - copia_9: -1081736207
+      CharacterSheet - copia 2_0: -1821445886
+      CharacterSheet - copia 2_1: 916520769
+      CharacterSheet - copia 2_10: -1209714734
+      CharacterSheet - copia 2_11: -249771713
+      CharacterSheet - copia 2_12: -516497010
+      CharacterSheet - copia 2_13: -1029972932
+      CharacterSheet - copia 2_14: -1884523115
+      CharacterSheet - copia 2_15: -1047951362
+      CharacterSheet - copia 2_2: 1841795689
+      CharacterSheet - copia 2_3: 1746006141
+      CharacterSheet - copia 2_4: -825846044
+      CharacterSheet - copia 2_5: 168793204
+      CharacterSheet - copia 2_6: -1368688833
+      CharacterSheet - copia 2_7: -266146045
+      CharacterSheet - copia 2_8: -22195860
+      CharacterSheet - copia 2_9: -87683277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
