@@ -7,7 +7,6 @@ using UnityEngine.SocialPlatforms.Impl;
 public class Coin : MonoBehaviour
 {
     [SerializeField] private int Quantity;
-    [SerializeField] private Points Hud;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +25,7 @@ public class Coin : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            Hud.AddPoints(Quantity);
+            GameManager.Instance.AddCoins(Quantity);
             Destroy(this.gameObject);
         }
     }
