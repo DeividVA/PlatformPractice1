@@ -6,27 +6,27 @@ using UnityEngine;
 
 public class PlatformController : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> pathObjects;
+    [SerializeField] private List<Transform> pathObjects;
     [SerializeField] private float speed;
 
-    private List<Vector3> _pathList;
     private int _numPoints;
     private int _actualPoint;
     // Start is called before the first frame update
     void Start()
     {
-        pathObjects.Insert(0, gameObject);
+        pathObjects.Insert(0, transform);
         _numPoints = pathObjects.Count;
         if (_numPoints == 0) enabled = false;
-        _pathList = pathObjects.Select(x => x.transform.position).ToList();
         _actualPoint = 0;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, _pathList[_actualPoint % _numPoints]) < 0.1f) _actualPoint++;
-        transform.position = Vector3.MoveTowards(transform.position, _pathList[_actualPoint % _numPoints],
+        if (Vector2.Distance(transform.position, pathObjects[_actualPoint % _numPoints].position) < 0.1f) _actualPoint++;
+        transform.position = Vector3.MoveTowards(transform.position, pathObjects[_actualPoint % _numPoints].position,
             speed * Time.deltaTime);
     }
 
